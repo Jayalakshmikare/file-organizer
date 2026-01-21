@@ -1,9 +1,7 @@
 import os
 import shutil
 
-# ⚠️ CHANGE THIS PATH
-# This should be the folder you want to ORGANIZE
-# DO NOT set this to the folder where organizer.py is stored
+
 folder_path = r"C:\test-files"
 
 # File type mapping
@@ -14,11 +12,11 @@ file_types = {
     "Videos": [".mp4", ".mkv", ".avi"]
 }
 
-# Create folders if they don't exist
+
 for folder in file_types:
     os.makedirs(os.path.join(folder_path, folder), exist_ok=True)
 
-# Create Others folder
+
 os.makedirs(os.path.join(folder_path, "Others"), exist_ok=True)
 
 # Organize files
